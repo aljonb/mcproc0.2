@@ -8,42 +8,42 @@ export interface MedicalItem {
 
 export const PROVIDERS: MedicalItem[] = [
   {
-    canonical: "Allergist",
+    canonical: "allergist",
     variations: ["allergy", "allergist"],
     category: "provider"
   },
   {
-    canonical: "Cardiologist",
+    canonical: "cardiologist",
     variations: ["cardiology", "cardiologist", "cardio"],
     category: "provider"
   },
   {
-    canonical: "Gastroenterologist",
+    canonical: "gastroenterologist",
     variations: ["gastro", "gastroenterologist", "gastroenterology", "gi"],
     category: "provider"
   },
   {
-    canonical: "Neurologist",
+    canonical: "neurologist",
     variations: ["neuro", "neurology", "neurologist"],
     category: "provider"
   },
   {
-    canonical: "Orthopedist",
+    canonical: "orthopedist",
     variations: ["ortho", "orthopedist", "orthopedic", "orthopedics"],
     category: "provider"
   },
   {
-    canonical: "Pulmonologist",
+    canonical: "pulmonologist",
     variations: ["pulmo", "pulmonology", "pulmonologist", "sleep medicine referral", "sleep medicine"],
     category: "provider"
   },
   {
-    canonical: "Pain Management",
+    canonical: "pain Management",
     variations: ["pain management", "pain mgmt"],
     category: "provider"
   },
   {
-    canonical: "Podiatrist",
+    canonical: "podiatrist",
     variations: ["podiatry", "podiatrist"],
     category: "provider"
   }
@@ -52,7 +52,7 @@ export const PROVIDERS: MedicalItem[] = [
 export const PROCEDURES: MedicalItem[] = [
   // Allergy & PT
   {
-    canonical: "Allergy Testing",
+    canonical: "allergy aesting",
     variations: ["allergy testing", "allergy skin prick test", "allergy test"],
     category: "test"
   },
@@ -71,8 +71,8 @@ export const PROCEDURES: MedicalItem[] = [
   
   // Ultrasounds
   {
-    canonical: "US Abdominal",
-    variations: ["us abdominal", "ultrasound abdominal"],
+    canonical: "US abdomen",
+    variations: ["US, abdomen, complete", "ultrasound abdominal"],
     category: "ultrasound"
   },
   {
@@ -133,8 +133,8 @@ export const PROCEDURES: MedicalItem[] = [
   
   // Sleep Tests
   {
-    canonical: "Sleep Apnea Home Test",
-    variations: ["sleep apnea home test", "sleep apnea test", "home sleep study"],
+    canonical: "Sleep Apnea",
+    variations: ["sleep apnea home test", "sleep apnea test", "home sleep study", "home sleep testing"],
     category: "test"
   },
   {
@@ -485,7 +485,7 @@ export const PROCEDURES: MedicalItem[] = [
   // X-Ray
   {
     canonical: "X-Ray",
-    variations: ["x-ray", "xray"],
+    variations: ["XR,", "xray"],
     category: "imaging"
   },
   
@@ -501,7 +501,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "test"
   },
   {
-    canonical: "Cardiac PFT",
+    canonical: "PFT",
     variations: ["cardiac pft", "pft"],
     category: "test"
   },
