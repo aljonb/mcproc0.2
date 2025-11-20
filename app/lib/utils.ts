@@ -216,7 +216,8 @@ export function parseAppointments(input: string): Appointment[] {
       const isValidAppointment = !isCancelled || 
                                   cancellationReason.toUpperCase().includes('PATIENT RESCHEDULED') ||
                                   cancellationReason.toUpperCase().includes('PATIENT CANCELLED') ||
-                                  cancellationReason.toUpperCase().includes('CANCELLED FROM PATIENT PORTAL');
+                                  cancellationReason.toUpperCase().includes('CANCELLED FROM PATIENT PORTAL') ||
+                                  cancellationReason.toUpperCase().includes('SCHEDULING ERROR');
       
       if (isValidAppointment) {
         appointments.push({
