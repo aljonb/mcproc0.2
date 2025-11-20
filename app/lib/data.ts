@@ -82,7 +82,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "US Arterial Doppler",
-    variations: ["us arterial doppler", "ultrasound arterial doppler"],
+    variations: ["US ARTERIAL DOPPLER,", "US, duplex, arterial, lower extremity"],
     category: "ultrasound"
   },
   {
@@ -101,8 +101,8 @@ export const PROCEDURES: MedicalItem[] = [
     category: "ultrasound"
   },
   {
-    canonical: "US renal",
-    variations: ["us renal", "ultrasound renal"],
+    canonical: "US renal artery",
+    variations: ["US, duplex, renal artery", "ultrasound renal"],
     category: "ultrasound"
   },
   {
@@ -548,7 +548,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "test"
   },
   {
-    canonical: "Event Monitor",
+    canonical: "event monitor",
     variations: ["event monitor", "cardiac event monitor", "heart event monitor"],
     category: "test"
   },
