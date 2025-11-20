@@ -81,7 +81,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "ultrasound"
   },
   {
-    canonical: "US Arterial Doppler",
+    canonical: "US lower arterial",
     variations: ["US ARTERIAL DOPPLER,", "US, duplex, arterial, lower extremity"],
     category: "ultrasound"
   },
@@ -402,12 +402,12 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI Lumbar Spine W/O",
+    canonical: "MRI lumbar spine W/O",
     variations: ["mri lumber spine w/o", "mri lumbar spine w/o", "mri l spine w/o"],
     category: "mri"
   },
   {
-    canonical: "MRI Lumbar Spine W/WO",
+    canonical: "MRI lumbar spine W/WO",
     variations: ["mri lumber spine w/wo", "mri lumbar spine w/wo", "mri l spine w/wo"],
     category: "mri"
   },
@@ -437,17 +437,17 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI Shoulder",
-    variations: ["mri shoulder"],
+    canonical: "MRI, shoulder, w/o contrast",
+    variations: ["MRI, shoulder, w/o contrast"],
     category: "mri"
   },
   {
-    canonical: "MRI Thoracic Spine W/Contrast",
+    canonical: "MRI thoracic spine W/Contrast",
     variations: ["mri thoracic spine w/contrast", "mri thoracic spine w/ contrast", "mri t spine w/"],
     category: "mri"
   },
   {
-    canonical: "MRI Thoracic Spine W/O",
+    canonical: "MRI thoracic spine W/O",
     variations: ["mri thoracic spine w/o", "mri t spine w/o"],
     category: "mri"
   },
