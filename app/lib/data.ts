@@ -38,7 +38,7 @@ export const PROVIDERS: MedicalItem[] = [
     category: "provider"
   },
   {
-    canonical: "pain Management",
+    canonical: "pain management",
     variations: ["pain management", "pain mgmt"],
     category: "provider"
   },
@@ -402,7 +402,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI lumbar spine W/O",
+    canonical: "MRI lumbar spine w/o contrast",
     variations: ["mri lumber spine w/o", "mri lumbar spine w/o", "mri l spine w/o"],
     category: "mri"
   },
@@ -447,7 +447,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI thoracic spine W/O",
+    canonical: "MRI thoracic spine w/o contrast",
     variations: ["mri thoracic spine w/o", "mri t spine w/o"],
     category: "mri"
   },
