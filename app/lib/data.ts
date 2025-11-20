@@ -548,6 +548,11 @@ export const PROCEDURES: MedicalItem[] = [
     category: "test"
   },
   {
+    canonical: "Event Monitor",
+    variations: ["event monitor", "cardiac event monitor", "heart event monitor"],
+    category: "test"
+  },
+  {
     canonical: "PVR",
     variations: ["pvr", "pulse volume recording"],
     category: "test"
