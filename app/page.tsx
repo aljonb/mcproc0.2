@@ -199,12 +199,12 @@ export default function Home() {
               <li>Paste outstanding orders in the first field (must be 6 months old or newer)</li>
               <li>Paste all appointments (past and future) in the second field</li>
               <li>Paste clinical notes in the third field (optional, but helps filter false positives)</li>
-              <li>Click "Analyze Missing Procedures" to see results</li>
+              <li>Click &quot;Analyze Missing Procedures&quot; to see results</li>
             </ol>
             <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
               <p className="text-sm text-blue-800 dark:text-blue-200">
                 <strong>Tip:</strong> The system automatically recognizes medical abbreviations and variations.
-                Notes containing phrases like "patient refused", "has own provider", or "outside" will
+                Notes containing phrases like &quot;patient refused&quot;, &quot;has own provider&quot;, or &quot;outside&quot; will
                 exclude procedures from the missing list.
               </p>
             </div>
