@@ -520,7 +520,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "PFT",
-    variations: ["cardiac pft", "pft"],
+    variations: ["cardiac pft", "pft", "PFT, complete", "complete PFT w/ post bronchodilator spirometry", "complete PFT w/ post bronchodilator spirometry* (submitted)"],
     category: "test"
   },
   {
@@ -531,7 +531,8 @@ export const PROCEDURES: MedicalItem[] = [
       "nerve conduction study emg upper",
       "nerve conduction emg upper",
       "ncs emg upper",
-      "upper extremity electromyogram"
+      "upper extremity electromyogram",
+      "nerve conduction study/EMG, upper extremity"
     ],
     category: "test"
   },
