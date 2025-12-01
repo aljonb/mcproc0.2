@@ -14,7 +14,7 @@ export const PROVIDERS: MedicalItem[] = [
   },
   {
     canonical: "cardiologist",
-    variations: ["cardiology", "cardiologist", "cardio"],
+    variations: ["cardiology", "cardiologist",],
     category: "provider"
   },
   {
