@@ -48,7 +48,7 @@ export const PROVIDERS: MedicalItem[] = [
 export const PROCEDURES: MedicalItem[] = [
   // Allergy & PT
   {
-    canonical: "allergy testing",
+    canonical: "allergy test",
     variations: ["allergy testing", "allergy skin prick test", "allergy test", "Allergy_Testing", "Allergy NEW, 20 min", "Allergy Testing"],
     category: "test"
   },  
