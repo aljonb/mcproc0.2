@@ -41,12 +41,8 @@ export const PROVIDERS: MedicalItem[] = [
     canonical: "pain management",
     variations: ["pain management", "pain mgmt"],
     category: "provider"
-  },
-  {
-    canonical: "podiatrist",
-    variations: ["podiatry", "podiatrist"],
-    category: "provider"
   }
+  
 ];
 
 export const PROCEDURES: MedicalItem[] = [
