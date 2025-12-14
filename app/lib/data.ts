@@ -101,7 +101,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "US carotid",
-    variations: ["us carotid doppler", "us carotid", "ultrasound carotid", "US, carotid", "US, duplex, carotid artery (perform)"],
+    variations: ["us carotid doppler", "us carotid", "ultrasound carotid", "US, carotid", "US, duplex, carotid artery (perform)", "US, duplex, carotid artery (submit)"],
     category: "ultrasound"
   },
   {
@@ -437,6 +437,15 @@ export const PROCEDURES: MedicalItem[] = [
   {
     canonical: "MRI Orbits (Face)",
     variations: ["mri orbits", "mri orbits face"],
+    category: "mri"
+  },                
+  {
+    canonical: "MR, angiogram, head + neck, w/ contrast",
+    variations: ["MR, angiogram, head + neck, w/ contrast", "mr angiogram head neck w/ contrast"],
+    category: "mri"
+  },
+  {canonical: "MRI, pituitary, w/wo contrast",
+    variations: ["mri pituitary w/wo contrast", "mri pituitary without contrast"],
     category: "mri"
   },
   {
