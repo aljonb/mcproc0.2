@@ -292,6 +292,12 @@ export const PROCEDURES: MedicalItem[] = [
   
   // MRI/MRA
 
+
+  {
+    canonical: "MRI, neck, w/o contrast",
+    variations: ["MRI, neck, w/o contrast"],
+    category: "mri"
+  },
   {
     canonical: "MR, angiogram, head, w/o contrast",
     variations: ["MR, angiogram, head, w/o contrast"],
@@ -419,6 +425,11 @@ export const PROCEDURES: MedicalItem[] = [
   {
     canonical: "MRI Hand",
     variations: ["mri hand"],
+    category: "mri"
+  },
+  {
+    canonical: "MRI, hip, w/o contrast",
+    variations: ["MRI, hip, w/o contrast"],
     category: "mri"
   },
   {
