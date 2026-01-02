@@ -284,7 +284,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "ct"
   },
   {
-    canonical: "CT Sinuses w/o Contrast",
+    canonical: "CT, sinuses, w/o contrast",
     variations: ["ct sinuses w/o contrast", "ct sinuses without contrast"],
     category: "ct"
   },
@@ -332,6 +332,11 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
+    canonical: "MR, angiogram, brain, w/wo contrast",
+    variations: ["MR, angiogram, brain, w/wo contrast"],
+    category: "mri"
+  },
+  {
     canonical: "MRA Lower Extremity W/O",
     variations: ["mra lower extremity w/o", "mra lower extremity"],
     category: "mri"
@@ -372,7 +377,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI brain W/WO Contrast",
+    canonical: "MRI, brain, w/wo contrast",
     variations: ["mri brain w/wo contrast", "mri brain w/w/o contrast", "MRI, brain + brain stem, w/o contrast"],
     category: "mri"
   },
@@ -387,12 +392,12 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI brain W/Contrast",
+    canonical: "MRI, brain, w/o contrast",
     variations: ["mri brain w/ contrast", "mri brain w/contrast", "mri brain with contrast"],
     category: "mri"
   },  
   {
-    canonical: "MRI brain w/o contrast",
+    canonical: "MRI, brain, w/o contrast",
     variations: ["mri brain without contrast", "mri brain w/o contrast", "MRI, brain, w/o contrast (submit)"],
     category: "mri"
   },
@@ -407,7 +412,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI C Spine w/o contrast",
+    canonical: "MRI, cervical spine, w/o contrast",
     variations: ["mri c spine w/o", "mri c spine w/o contrast", "mri cervical spine w/o"],
     category: "mri"
   },
@@ -457,10 +462,16 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI lumbar spine w/o contrast",
+    canonical: "MRI, lumbar spine, w/o contrast",
     variations: ["mri lumber spine w/o", "mri lumbar spine w/o", "mri l spine w/o"],
     category: "mri"
   },
+  {
+    canonical: "MRI, liver, w/wo contrast",
+    variations: ["MRI, liver, w/wo contrast"],
+    category: "mri"
+  },
+
   {
     canonical: "MRI lumbar spine W/WO",
     variations: ["mri lumber spine w/wo", "mri lumbar spine w/wo", "mri l spine w/wo"],
