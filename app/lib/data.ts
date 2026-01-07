@@ -651,7 +651,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "VEEG",
-    variations: ["veeg"],
+    variations: ["veeg", "continuous electroencephalogram with video"],
     category: "test"
   },
   {
