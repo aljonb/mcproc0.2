@@ -25,7 +25,7 @@ export const PROVIDERS: MedicalItem[] = [
   },
   {
     canonical: "gastro",
-    variations: ["gastro", "gastroenterologist", "gastroenterology", "gi"],
+    variations: ["gastro", "gastroenterologist", "gastroenterology"],
     category: "provider"
   },
   {
@@ -443,12 +443,12 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "MRI, hip, w/o contrast",
-    variations: ["MRI, hip, w/o contrast"],
+    variations: ["MRI, hip, w/o contrast", " MRI Hips, 30 min"],
     category: "mri"
   },
   {
     canonical: "MRI Hips",
-    variations: ["mri hips", "mri hip"],
+    variations: ["mri hips", "mri hip", "MRI, hip, w/o contrast"],
     category: "mri"
   },
   {
