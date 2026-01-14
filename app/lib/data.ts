@@ -126,7 +126,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "US renal artery",
-    variations: ["US, duplex, renal artery", "ultrasound renal", "US Renal Doppler"],
+    variations: ["US, duplex, renal artery", "ultrasound renal", "US Renal Doppler", "US, duplex, renal artery (submitted, STAT)", " US RENAL, 20 min"],
     category: "ultrasound"
   },
   {
@@ -387,7 +387,7 @@ export const PROCEDURES: MedicalItem[] = [
     category: "mri"
   },
   {
-    canonical: "MRI brain +IAC W/Contrast",
+    canonical: "MRI, brain + internal auditory canal, w/o contrast",
     variations: ["mri brain +iac w/ contrast", "mri brain iac w/ contrast", "MRI, brain + internal auditory canal, w/o contrast"],
     category: "mri"
   },
