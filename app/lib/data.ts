@@ -243,6 +243,13 @@ export const PROCEDURES: MedicalItem[] = [
     variations: ["ct maxillofacial w/o contrast", "ct maxillofacial without contrast"],
     category: "ct"
   },
+
+  {
+    canonical: "CT, thoracic spine, w/o contrast",
+    variations: ["CT, thoracic spine, w/o contrast"],
+    category: "ct"
+  },
+
   {
     canonical: "CT Pelvis Without Contrast",
     variations: ["ct pelvis without contrast", "ct pelvis w/o"],
