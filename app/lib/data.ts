@@ -594,6 +594,12 @@ export const PROCEDURES: MedicalItem[] = [
   
   // X-Ray
   {
+    canonical: "X-Ray chest",
+    variations: ["XR, chest"],
+    category: "xray"
+  },
+
+  {
     canonical: "X-Ray",
     variations: ["XR,", "xray", "X_RAY"],
     category: "imaging"
