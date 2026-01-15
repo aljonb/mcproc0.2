@@ -345,7 +345,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "MR, angiogram, brain, w/wo contrast",
-    variations: ["MR, angiogram, brain, w/wo contrast"],
+    variations: ["MR, angiogram, brain, w/wo contrast", " MRA BRAIN/HEAD, 30 min"],
     category: "mri"
   },
   {
@@ -441,6 +441,10 @@ export const PROCEDURES: MedicalItem[] = [
   {
     canonical: "MRI Femur",
     variations: ["mri femur"],
+    category: "mri"
+  },
+  {canonical: "MRI, foot, w/o contrast",
+    variations: ["MRI, foot, w/o contrast"],
     category: "mri"
   },
   {
