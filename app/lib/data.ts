@@ -195,8 +195,13 @@ export const PROCEDURES: MedicalItem[] = [
     category: "ct"
   },
   {
-    canonical: "CT Angiogram Chest",
-    variations: ["ct angiogram chest", "ct angio chest"],
+    canonical: "CT, angiogram, chest, w/ contrast",
+    variations: ["CT, angiogram, chest, w/ contrast"],
+    category: "ct"
+  },
+  {
+    canonical: "CT, angiogram, coronary arteries, w/wo contrast",
+    variations: ["CT, angiogram, coronary arteries, w/wo contrast"],
     category: "ct"
   },
   {
@@ -613,6 +618,12 @@ export const PROCEDURES: MedicalItem[] = [
     variations: ["XR, foot"],
     category: "imaging"
   },
+   {
+    canonical: "XR, forearm",
+    variations: ["XR, forearm"],
+    category: "imaging"
+  },
+
 
   {
     canonical: "XR, lumbar spine",
@@ -726,12 +737,12 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "back brace",
-    variations: ["back brace"],
+    variations: ["back brace", "BRACES"],
     category: "equipment"
   },
   {
     canonical: "brace",
-    variations: ["brace", "KNEE BRACE, HINGED", "knee brace", "orthotic brace"],
+    variations: ["brace", "KNEE BRACE, HINGED", "knee brace", "orthotic brace", "BRACES"],
     category: "equipment"
   },
   {
