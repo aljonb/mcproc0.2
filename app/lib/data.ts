@@ -449,7 +449,7 @@ export const PROCEDURES: MedicalItem[] = [
   },
   {
     canonical: "MRI, elbow, w/o contrast",
-    variations: ["MRI, elbow, w/o contrast"],
+    variations: ["MRI, elbow, w/o contrast", " MRI Elbow"],
     category: "mri"
   },
   {
