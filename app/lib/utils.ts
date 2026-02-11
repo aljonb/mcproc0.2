@@ -423,6 +423,58 @@ export interface MissingProcedure {
   reason: string;
 }
 
+export interface MissingProcedureNoteMention {
+  item: string;
+  lines: string[];
+}
+
+export function findMissingProcedureMentionsInNotes(
+  notes: string,
+  missingProcedures: MissingProcedure[]
+): MissingProcedureNoteMention[] {
+  if (!notes.trim() || missingProcedures.length === 0) {
+    return [];
+  }
+
+  const noteLines = notes
+    .split('\n')
+    .map(line => line.trim())
+    .filter(Boolean);
+
+  if (noteLines.length === 0) {
+    return [];
+  }
+
+  const normalizedLines = noteLines.map(line => normalizeText(line));
+
+  return missingProcedures
+    .map(({ item }) => {
+      const medicalItem = ALL_MEDICAL_ITEMS.find(entry => entry.canonical === item);
+      const searchTerms = medicalItem?.variations?.length
+        ? medicalItem.variations
+        : [item];
+
+      const normalizedTerms = Array.from(
+        new Set(searchTerms.map(term => normalizeText(term)).filter(Boolean))
+      );
+
+      const matchedLines = noteLines.filter((line, index) => {
+        const normalizedLine = normalizedLines[index];
+        return normalizedTerms.some(term => {
+          const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const regex = new RegExp(`(?:\\b|(?<=\\d))${escaped}\\b`);
+          return regex.test(normalizedLine);
+        });
+      });
+
+      return {
+        item,
+        lines: Array.from(new Set(matchedLines)),
+      };
+    })
+    .filter(entry => entry.lines.length > 0);
+}
+
 // Helper: check if an appointment occurs on or after the order date (or when dates are missing)
 function isAppointmentOnOrAfterOrder(apt: Appointment, order: Order): boolean {
   // If order has no date, accept any appointment

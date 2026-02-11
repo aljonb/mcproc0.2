@@ -1,7 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { analyzeMissingProcedures, MissingProcedure } from './lib/utils';
+import {
+  analyzeMissingProcedures,
+  findMissingProcedureMentionsInNotes,
+  MissingProcedure
+} from './lib/utils';
 
 export default function Home() {
   const [ordersInput, setOrdersInput] = useState('');
@@ -23,6 +27,10 @@ export default function Home() {
     setResults([]);
     setAnalyzed(false);
   };
+
+  const missingMentionsInNotes = analyzed
+    ? findMissingProcedureMentionsInNotes(notesInput, results)
+    : [];
 
   const copyResults = () => {
     const date = new Date().toLocaleDateString('en-US', { 
@@ -95,6 +103,36 @@ export default function Home() {
             <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
               Notes about refusals, outside providers, etc.
             </p>
+            {analyzed && results.length > 0 && (
+              <div className="mt-3 p-3 bg-gray-50 dark:bg-gray-700/60 border border-gray-200 dark:border-gray-600 rounded-md">
+                <p className="text-xs font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                  Mentions of Missing Procedures in Notes
+                </p>
+                {missingMentionsInNotes.length === 0 ? (
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    No mention of current missing procedures found in the notes.
+                  </p>
+                ) : (
+                  <div className="space-y-2">
+                    {missingMentionsInNotes.map((mention, index) => (
+                      <div key={`${mention.item}-${index}`}>
+                        <p className="text-xs font-medium text-gray-800 dark:text-gray-100">
+                          {mention.item}
+                        </p>
+                        {mention.lines.map((line, lineIndex) => (
+                          <p
+                            key={`${mention.item}-${lineIndex}`}
+                            className="text-xs text-gray-600 dark:text-gray-300"
+                          >
+                            • {line}
+                          </p>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
 
