@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:athena": "playwright test -c athena/playwright.config.ts athena/tests/connect.spec.ts",
+    "test:e2e:athena:patient": "playwright test --headed -c athena/playwright.config.ts athena/tests/patient-lookup.spec.ts"
   },
   "dependencies": {
     "next": "^16.0.10",
@@ -14,6 +18,7 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

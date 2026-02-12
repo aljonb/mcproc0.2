@@ -1,0 +1,10 @@
+
+> missing-proc@0.1.0 test:e2e:athena
+> playwright test -c athena/playwright.config.ts
+
+
+Running 1 test using 1 worker
+
+  ✓  1 [chromium] › athena/tests/connect.spec.ts:3:5 › connects to Athena page (439ms)
+
+  1 passed (1.4s)
